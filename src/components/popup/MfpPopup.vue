@@ -18,7 +18,7 @@
             ></iframe>
           </div>
         </div>
-        <div class="mfp-preloader">Loading...</div>
+        <div class="mfp-preloader">Carregando...</div>
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@
             <img class="mfp-img" :src="img" />
           </div>
         </div>
-        <div class="mfp-preloader">Loading...</div>
+        <div class="mfp-preloader">Carregando...</div>
       </div>
     </div>
   </div>

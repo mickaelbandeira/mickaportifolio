@@ -1155,8 +1155,12 @@ h6 {
   overflow: hidden;
 }
 .edrea_tm_modalbox .about_popup_details .partners .list ul li img {
-  max-width: 65%;
-  max-height: 65px;
+  max-width: 80%;
+  max-height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .edrea_tm_modalbox .about_popup_details .partners .list ul li .list_inner {
   width: 100%;

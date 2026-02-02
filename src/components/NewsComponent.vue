@@ -3,8 +3,9 @@
     <div class="section_inner">
       <div class="edrea_tm_news swiper-section">
         <div class="edrea_tm_main_title">
-          <h3>Latest <span class="coloring">News</span></h3>
+          <h3>Projetos <span class="coloring">AeC</span></h3>
         </div>
+        
         <div class="news_list">
           <swiper
             :loop="false"
@@ -29,61 +30,40 @@
                 spaceBetween: 30,
               },
             }"
-            @slideChange="onSlideChange"
             :modules="modules"
             class="swiper-container"
           >
             <swiper-slide
               class="swiper-slide"
-              v-for="(data, i) in newsData"
+              v-for="(data, i) in tecnologiaData"
               :key="i"
             >
               <div class="list_inner">
                 <div class="image">
                   <img src="img/thumbs/4-3.jpg" alt="" />
-                  <div class="main" :data-img-url="data.img"></div>
-                  <a class="edrea_tm_full_link news_popup" href="#"></a>
+                  <div
+                    class="main"
+                    :style="{ backgroundImage: `url(${data.img})` }"
+                  ></div>
+                  <a class="edrea_tm_full_link" :href="data.url" target="_blank"></a>
                 </div>
                 <div class="details">
                   <h3>
-                    <a href="#">{{ data.title }}</a>
+                    <a :href="data.url" target="_blank">{{ data.title }}</a>
                   </h3>
                   <span
-                    ><a href="#">{{ data.tag }}</a></span
+                    ><a :href="data.url" target="_blank">Acessar Projeto</a></span
                   >
                 </div>
-
-                <!-- News Popup Informations -->
-                <div class="edrea_tm_hidden_content">
-                  <div class="news_popup_details">
-                    <div class="top_image">
-                      <img src="img/thumbs/4-2.jpg" alt="" />
-                      <div class="main" :data-img-url="data.img"></div>
-                    </div>
-                    <div class="news_main_title">
-                      <h3>{{ data.title }}</h3>
-                      <span
-                        ><a href="#">{{ data.tag }}</a></span
-                      >
-                      <div></div>
-                    </div>
-                    <div class="text">
-                      <p v-for="(text, t) in data.des" :key="t">
-                        {{ text }}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- /News Popup Informations -->
               </div>
             </swiper-slide>
-            <div class="edrea_tm_swiper_progress fill">
+             <div class="edrea_tm_swiper_progress fill">
               <div class="my_pagination_in">
                 <span class="currentNews">0</span>
                 <span class="pagination_progress"
                   ><span class="all allNews"><span></span></span
                 ></span>
-                <span class="totalNews">04</span>
+                <span class="totalNews">05</span>
               </div>
               <div class="my_navigation">
                 <ul>
@@ -143,63 +123,115 @@ export default {
   },
   data() {
     return {
-      newsData: [
+      tecnologiaData: [
         {
-          title: "Building brands through customer service",
+          title: "Mapeamento de Perfil",
+          img: "img/tecnologia/mapeamento-perfil.png",
+          url: "https://mapeamentodeperfilaec.vercel.app/",
+        },
+        {
+          title: "Teste de Digitação e Pt",
+          img: "img/tecnologia/teste-digitacao.png",
+          url: "https://ae-c-teste-de-portugu-s.vercel.app/",
+        },
+        {
+          title: "Forms",
+          img: "img/tecnologia/forms.png",
+          url: "https://aec-training-insights.vercel.app/",
+        },
+        {
+          title: "Portal do Instrutor",
+          img: "img/tecnologia/portal-instrutor.png",
+          url: "https://agenteianexus.vercel.app/",
+        },
+        {
+          title: "Zup",
+          img: "img/tecnologia/zup.png",
+          url: "https://zup-management-system.vercel.app/",
+        },
+        {
+          title: "TRN Entrevista",
+          img: "img/tecnologia/trn-entrevista.png",
+          url: "https://trn-entrevista.vercel.app/",
+        },
+        {
+          title: "TRN Revisor",
+          img: "img/tecnologia/trn-revisor.png",
+          url: "https://revisoraec-main.vercel.app/",
+        },
+        {
+          title: "TRN Insumos",
+          img: "img/tecnologia/trn-insumos.png",
+          url: "https://insumosrevistas.vercel.app/",
+        },
+        {
+          title: "Quiz Natalino",
+          img: "img/tecnologia/quiz-natalino.png",
+          url: "https://oficina-do-noel.vercel.app/",
+        },
+        {
+          title: "Jogo da Memória",
+          img: "img/tecnologia/jogo-da-memoria.png",
+          url: "https://jogodamemoriaaec.vercel.app/",
+        },
+      ],
+      revistasData: [
+        {
+          title: "Construindo marcas através do atendimento ao cliente",
           img: "img/news/1.jpg",
-          tag: "Branding",
+          tag: "Marca",
           des: [
-            "Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
+            "A Oki é uma agência líder em web design com uma equipe de design premiada que cria sites inovadores e eficazes que capturam sua marca, melhoram suas taxas de conversão e maximizam sua receita para ajudar a crescer seu negócio e alcançar seus objetivos.",
             "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
             "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
           ],
         },
         {
-          title: "Unstoppable Jamstack and Gatsby opportunity",
+          title: "Oportunidade imparável com Jamstack e Gatsby",
           img: "img/news/2.jpg",
           tag: "Design",
           des: [
-            "Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
+            "A Oki é uma agência líder em web design com uma equipe de design premiada que cria sites inovadores e eficazes que capturam sua marca, melhoram suas taxas de conversão e maximizam sua receita para ajudar a crescer seu negócio e alcançar seus objetivos.",
             "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
             "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
           ],
         },
         {
-          title: "Electron framework adds encryption API",
+          title: "Framework Electron adiciona API de criptografia",
           img: "img/news/3.jpg",
-          tag: "Media",
+          tag: "Mídia",
           des: [
-            "Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
+            "A Oki é uma agência líder em web design com uma equipe de design premiada que cria sites inovadores e eficazes que capturam sua marca, melhoram suas taxas de conversão e maximizam sua receita para ajudar a crescer seu negócio e alcançar seus objetivos.",
             "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
             "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
           ],
         },
         {
-          title: "Sentry for JavaScript monitors release health",
+          title: "Sentry para JavaScript monitora a saúde das releases",
           img: "img/news/4.jpg",
-          tag: "Technology",
+          tag: "Tecnologia",
           des: [
-            "Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
+             "A Oki é uma agência líder em web design com uma equipe de design premiada que cria sites inovadores e eficazes que capturam sua marca, melhoram suas taxas de conversão e maximizam sua receita para ajudar a crescer seu negócio e alcançar seus objetivos.",
             "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
             "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
           ],
         },
         {
-          title: "Five reasons to begin a Packt subscription",
+          title: "Cinco razões para começar uma assinatura Packt",
           img: "img/news/5.jpg",
-          tag: "Lifestyle",
+          tag: "Estilo de Vida",
           des: [
-            "Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
+            "A Oki é uma agência líder em web design com uma equipe de design premiada que cria sites inovadores e eficazes que capturam sua marca, melhoram suas taxas de conversão e maximizam sua receita para ajudar a crescer seu negócio e alcançar seus objetivos.",
             "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
             "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
           ],
         },
         {
-          title: "Why developers are so divided over WordPress",
+          title: "Por que desenvolvedores estão tão divididos sobre WordPress",
           img: "img/news/6.jpg",
-          tag: "Modern",
+          tag: "Moderno",
           des: [
-            "Oki is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
+           "A Oki é uma agência líder em web design com uma equipe de design premiada que cria sites inovadores e eficazes que capturam sua marca, melhoram suas taxas de conversão e maximizam sua receita para ajudar a crescer seu negócio e alcançar seus objetivos.",
             "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
             "That’s why more companies are not only reevaluating their website’s design but also partnering with Kura, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
           ],
@@ -209,3 +241,6 @@ export default {
   },
 };
 </script>
+
+<style>
+</style>

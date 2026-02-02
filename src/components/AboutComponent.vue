@@ -5,26 +5,26 @@
         <div class="left">
           <div class="image">
             <img src="img/thumbs/1-1.jpg" alt="" />
-            <div class="main" data-img-url="img/about/1.jpg"></div>
+            <div
+              class="main"
+              :style="{ backgroundImage: 'url(img/about/micka.png)' }"
+            ></div>
           </div>
         </div>
         <div class="right">
           <div class="short">
-            <h3 class="name">David <span class="coloring">Parker</span></h3>
+            <h3 class="name">Micka <span class="coloring">Bandeira</span></h3>
             <h3 class="job">
               <AnimationText />
             </h3>
           </div>
           <div class="text">
             <p>
-              My name is <span>David Parker.</span> I am a graphic designer, and
-              I'm very passionate and dedicated to my work. With 20 years
-              experience as a professional a graphic designer, I have acquired
-              the skills and knowledge.
+              Unindo 9 anos de experiência em Design à Engenharia de IA. Desenvolvo automações inteligentes e interfaces que conectam estética, funcionalidade e tecnologia de ponta.
             </p>
           </div>
           <div class="edrea_tm_button" id="aboutPopup">
-            <a href="#">Learn More</a>
+            <a href="#">Saiba Mais</a>
           </div>
         </div>
       </div>

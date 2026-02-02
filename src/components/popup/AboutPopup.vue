@@ -11,7 +11,10 @@
               <div class="author">
                 <div class="avatar_image">
                   <img src="img/thumbs/1-1.jpg" alt="" />
-                  <div class="main" data-img-url="img/about/1.jpg"></div>
+                  <div
+                    class="main"
+                    :style="{ backgroundImage: 'url(img/about/popup_avatar.png)' }"
+                  ></div>
                 </div>
                 <div class="short">
                   <h3 class="name">
@@ -71,7 +74,7 @@
                 </ul>
               </div>
               <div class="edrea_tm_button full">
-                <a href="img/about/1.jpg" download>Download CV</a>
+                <a href="https://wa.me/5582996004382" target="_blank">Fale comigo</a>
               </div>
             </div>
           </div>
@@ -80,23 +83,19 @@
               <div class="biography">
                 <div class="about_title">
                   <h3>
-                    <span>About <span class="coloring">Me</span></span>
+                    <span>Sobre <span class="coloring">Mim</span></span>
                   </h3>
                 </div>
                 <div class="text">
                   <p>
-                    Hello everybody! My name is
-                    <span>David Parker.</span> I am a graphic designer, and I'm
-                    very passionate and dedicated to my work. With 20 years
-                    experience as a professional a graphic designer, I have
-                    acquired the skills and knowledge.
+                    Meu nome é <span>Micka Bandeira</span> e minha jornada sempre foi sobre comunicar ideias. Começou com o Design Gráfico e a Diagramação, onde passei 9 anos refinando o olhar visual. Hoje, levo essa bagagem para o mundo da Programação e IA. Acredito que a tecnologia deve ser inteligente, mas também humana. Por isso, desenvolvo automações e sistemas focados em otimizar o tempo e potencializar resultados, sem nunca abrir mão da experiência do usuário.
                   </p>
                 </div>
               </div>
               <div class="service">
                 <div class="about_title">
                   <h3>
-                    <span>Quality <span class="coloring">Services</span></span>
+                    <span>Cursos e <span class="coloring">Tecnologias</span></span>
                   </h3>
                 </div>
                 <div class="list">
@@ -111,58 +110,34 @@
                 <div class="about_title">
                   <h3>
                     <span
-                      >Programming <span class="coloring">Skills</span></span
+                      >Habilidades de <span class="coloring">Programação</span></span
                     >
                   </h3>
                 </div>
-                <div class="oki_progress">
+                <div class="programming_skills_list" style="margin-top: 20px;">
                   <div
-                    class="progress_inner"
+                    class="skill_item"
                     v-for="(skill, i) in aboutData.skills.programming"
                     :key="i"
+                    style="margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px dashed rgba(255,255,255,0.1);"
                   >
-                    <span
-                      ><span class="label">{{ skill.name }}</span
-                      ><span class="number">{{ skill.value }}%</span></span
-                    >
-                    <div class="background">
-                      <div class="bar open">
-                        <div
-                          class="bar_in"
-                          :style="{ width: `${skill.value}%` }"
-                        ></div>
-                      </div>
-                    </div>
+                    <h5 style="margin: 0; font-size: 16px; color: #fff; font-family: 'Poppins'; font-weight: 600;">{{ skill.name }}</h5>
+                    <p style="margin: 5px 0 0 0; font-size: 15px; color: #a2a2a2; font-family: 'Mulish'; line-height: 1.5;">{{ skill.value }}</p>
                   </div>
                 </div>
               </div>
               <div class="lang_skill">
                 <div class="about_title">
                   <h3>
-                    <span>Language <span class="coloring">Skills</span></span>
+                    <span>Habilidades <span class="coloring">Linguísticas</span></span>
                   </h3>
                 </div>
                 <div class="circular_progress_bar">
                   <ul>
                     <li>
                       <div class="list_inner">
-                        <div class="myCircle" data-value=".95"></div>
-
-                        <div class="title"><span>English</span></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="list_inner">
-                        <div class="myCircle" data-value="0.8"></div>
-
-                        <div class="title"><span>Russian</span></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="list_inner">
-                        <div class="myCircle" data-value="0.9"></div>
-
-                        <div class="title"><span>Arabic</span></div>
+                        <div class="myCircle" data-value="1.0"></div>
+                        <div class="title"><span>Português</span></div>
                       </div>
                     </li>
                   </ul>
@@ -172,7 +147,7 @@
                 <div class="about_title">
                   <h3>
                     <span
-                      >Education <span class="coloring">Timeline</span></span
+                      >Formação <span class="coloring">Acadêmica</span></span
                     >
                   </h3>
                 </div>
@@ -195,7 +170,7 @@
               <div class="timeline">
                 <div class="about_title">
                   <h3>
-                    <span>Working <span class="coloring">Timeline</span></span>
+                    <span>Experiência <span class="coloring">Profissional</span></span>
                   </h3>
                 </div>
                 <div class="list">
@@ -217,7 +192,7 @@
               <div class="partners">
                 <div class="about_title">
                   <h3>
-                    <span>My <span class="coloring">Partners</span></span>
+                    <span>Meus <span class="coloring">Parceiros</span></span>
                   </h3>
                 </div>
                 <div class="list">
@@ -234,7 +209,7 @@
               <div class="testimonial">
                 <div class="about_title">
                   <h3>
-                    <span>Clients <span class="coloring">Feedback</span></span>
+                    <span>Feedback de <span class="coloring">Clientes</span></span>
                   </h3>
                 </div>
                 <div class="list">
@@ -254,20 +229,20 @@
                         <div class="text">
                           <i class="icon-quote-left"></i>
                           <p>
-                            Beautiful minimalist design and great, fast response
-                            with support. Highly recommend. Thanks Marketify!
+                            Belo design minimalista e ótima resposta rápida
+                            com suporte. Altamente recomendado. Obrigado Micka!
                           </p>
                         </div>
                         <div class="details">
                           <div class="image">
                             <div
                               class="main"
-                              data-img-url="img/testimonials/1.jpg"
+                              :style="{ backgroundImage: 'url(img/testimonials/eli_mario.png)' }"
                             ></div>
                           </div>
                           <div class="info">
-                            <h3>Alexander Walker</h3>
-                            <span>Graphic Designer</span>
+                            <h3>Eli Mário</h3>
+                            <span>Jornalista - Tecla1</span>
                           </div>
                         </div>
                       </div>
@@ -277,20 +252,20 @@
                         <div class="text">
                           <i class="icon-quote-left"></i>
                           <p>
-                            These people really know what they are doing! Great
-                            customer support availability and supperb kindness.
+                            Essas pessoas realmente sabem o que estão fazendo! Ótimo
+                            suporte ao cliente e excelente gentileza.
                           </p>
                         </div>
                         <div class="details">
                           <div class="image">
                             <div
                               class="main"
-                              data-img-url="img/testimonials/2.jpg"
+                              :style="{ backgroundImage: 'url(img/testimonials/paulo_gabriel_v2.png)' }"
                             ></div>
                           </div>
                           <div class="info">
-                            <h3>Armin Van Buuren</h3>
-                            <span>Content Manager</span>
+                            <h3>Paulo Gabriel</h3>
+                            <span>Presidente da Jorgraf e Jornalista<br>Arapiraca News</span>
                           </div>
                         </div>
                       </div>
@@ -300,21 +275,21 @@
                         <div class="text">
                           <i class="icon-quote-left"></i>
                           <p>
-                            I had a little problem and the support was just
-                            awesome to quickly solve the situation. And keep
-                            going on.
+                            Tive um pequeno problema e o suporte foi apenas
+                            incrível para resolver a situação rapidamente. Continuem
+                            assim.
                           </p>
                         </div>
                         <div class="details">
                           <div class="image">
                             <div
                               class="main"
-                              data-img-url="img/testimonials/3.jpg"
+                              :style="{ backgroundImage: 'url(img/testimonials/mariana_new.jpg)' }"
                             ></div>
                           </div>
                           <div class="info">
-                            <h3>Baraka Clinton</h3>
-                            <span>English Teacher</span>
+                            <h3>Mariana Melo</h3>
+                            <span>Enfermeira Consulttymed</span>
                           </div>
                         </div>
                       </div>
@@ -346,70 +321,62 @@ export default {
       open: false,
       // data
       aboutData: {
-        firstName: "David",
-        lastName: "Parker",
-        bithday: "01.07.1990",
-        address: "Avon str. 22, NYC, USA",
-        phn: "+77 022 155 02 02",
-        email: "example@gmail.com",
+        firstName: "Micka",
+        lastName: "Bandeira",
+        bithday: "18.10.1991",
+        address: "Arapiraca/AL",
+        phn: "WhatsApp: 82 996004382",
+        email: "mickaelbandeira91@gmail.com",
         serviceLists: [
-          "Website Development",
-          "Digital Experience",
-          "Content Marketing",
-          "Social Media Design",
-          "Shared Web Hosting",
+          "Agentes de IA | MCP, APIS, RAG",
+          "AI Coding",
+          "Saas IA",
+          "N8N",
+          "Supabase | Modelagem de Bancos de Dados",
+          "FlutterFlow",
+          ".Bubble",
+          "Framer",
         ],
         skills: {
           programming: [
-            { name: "WordPress", value: "95" },
-            { name: "JavaScript", value: "80" },
-            { name: "Angular", value: "90" },
+            { name: "Desenvolvimento Fullstack", value: "React, Next.js, Supabase, PostgreSQL" },
+            { name: "IA & Automação", value: "n8n, OpenAI API, LangChain, Agentes de IA" },
+            { name: "Ferramentas de Design", value: "Figma, Adobe Suite, Prototipagem de Alta Fidelidade" },
+            { name: "Versionamento & Deploy", value: "Git, GitHub, Vercel, Docker" },
+            { name: "Infraestrutura e Dados", value: "Hostinger - Infraestrutura Serverless, Hospedagem VPS - Hetzner - Infraestrutura Avançada, PostgreSQL - Modelagem de Dados" },
           ],
           language: [
-            { name: "English", value: "95" },
-            { name: "Russian", value: "80" },
-            { name: "Arabic", value: "90" },
+            { name: "Português", value: "100" },
           ],
         },
         education: [
           {
-            year: "2014 - 2016",
-            unv: "Oxford Univercity",
-            degree: "Master Degree",
-          },
-          {
-            year: "2010 - 2014",
-            unv: "Texas Univercity",
-            degree: "Bachelor Degree",
-          },
-          {
-            year: "2008 - 2010",
-            unv: "Simone College",
-            degree: "Associate Degree",
+            year: "Atualmente",
+            unv: "Em Curso",
+            degree: "Inteligência Artificial",
           },
         ],
         working: [
           {
-            year: "2018 - running",
-            company: "Envato Elements",
-            deg: "Exclusive Author",
+            year: "Atualmente",
+            company: "AeC",
+            deg: "Analista de Conteúdo",
           },
           {
-            year: "2015 - 2018",
-            company: "Avo Corporation",
-            deg: "Content Manager",
-          },
-          {
-            year: "2012 - 2015",
-            company: "FC Barcelona",
-            deg: "Football Player",
+            year: "9 Anos",
+            company: "Experiência Geral",
+            deg: "Designer Gráfico, Diagramador, Dev & IA",
           },
         ],
         partnersLogos: [
-          "img/partners/1.png",
-          "img/partners/2.png",
-          "img/partners/3.png",
-          "img/partners/4.png",
+          "img/partners/consultymed.png",
+          "img/partners/blog_do_bina.png",
+          "img/partners/tecla1.png",
+          "img/partners/aec.png",
+          "img/partners/partner_6.png",
+          "img/partners/partner_7.png",
+          "img/partners/partner_8.png",
+          "img/partners/partner_9.png",
         ],
       },
     };
@@ -485,5 +452,11 @@ export default {
     transparent var(--holesize),
     black calc(var(--holesize) + 1px)
   );
+}
+
+.edrea_tm_modalbox .about_popup_details .left .list ul li span a {
+  word-break: break-all;
+  display: inline-block;
+  line-height: 1.4;
 }
 </style>

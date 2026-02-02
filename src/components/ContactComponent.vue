@@ -3,7 +3,7 @@
     <div class="section_inner">
       <div class="edrea_tm_contact">
         <div class="edrea_tm_main_title">
-          <h3>Get in <span class="coloring">Touch</span></h3>
+          <h3>Entre em <span class="coloring">Contato</span></h3>
         </div>
         <div class="wrapper">
           <div class="left">
@@ -13,7 +13,7 @@
                   <i class="icon-location"></i>
                   <span
                     ><a href="#" class="href_location"
-                      >Avon str. 22, NYC, USA</a
+                      >Arapiraca/AL</a
                     ></span
                   >
                 </div>
@@ -21,24 +21,26 @@
               <li>
                 <div class="list_inner">
                   <i class="icon-phone"></i>
-                  <span><a href="#">+77 022 155 02 02</a></span>
+                  <span><a href="#">WhatsApp: 82 996004382</a></span>
                 </div>
               </li>
               <li>
                 <div class="list_inner">
                   <i class="icon-mail-1"></i>
                   <span
-                    ><a href="mailto:example@gmail.com"
-                      >example@gmail.com</a
+                    ><a href="mailto:mickaelbandeira91@gmail.com"
+                      >mickaelbandeira91@gmail.com</a
                     ></span
                   >
                 </div>
               </li>
               <li>
                 <div class="list_inner">
-                  <i class="icon-facebook-rect"></i>
+                  <i class="icon-instagram-1"></i>
                   <span
-                    ><a href="https://www.facebook.com">@facebookNick</a></span
+                    ><a href="https://www.instagram.com/mickaelbandeira/"
+                      >@mickaelbandeira</a
+                    ></span
                   >
                 </div>
               </li>
@@ -54,10 +56,10 @@
               >
                 <div
                   class="returnmessage"
-                  data-success="Your message has been received, We will contact you soon."
+                  data-success="Sua mensagem foi recebida, entraremos em contato em breve."
                 ></div>
                 <div class="empty_notice">
-                  <span>Please Fill Required Fields</span>
+                  <span>Por favor, preencha os campos obrigatórios</span>
                 </div>
                 <div class="first">
                   <ul>
@@ -66,7 +68,7 @@
                         <input
                           id="name"
                           type="text"
-                          placeholder="Name"
+                          placeholder="Nome"
                           autocomplete="off"
                         />
                       </div>
@@ -76,7 +78,7 @@
                         <input
                           id="email"
                           type="text"
-                          placeholder="Email"
+                          placeholder="E-mail"
                           autocomplete="off"
                         />
                       </div>
@@ -84,10 +86,10 @@
                   </ul>
                 </div>
                 <div class="last">
-                  <textarea id="message" placeholder="Message"></textarea>
+                  <textarea id="message" placeholder="Mensagem"></textarea>
                 </div>
                 <div class="edrea_tm_button">
-                  <a id="send_message" href="#">Send Message</a>
+                  <a id="send_message" href="#">Enviar Mensagem</a>
                 </div>
 
                 <!-- If you want change mail address to yours, just open "modal" folder >> contact.php and go to line 4 and change detail to yours.  -->

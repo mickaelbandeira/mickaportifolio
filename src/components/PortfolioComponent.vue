@@ -3,7 +3,7 @@
     <div class="section_inner">
       <div class="edrea_tm_portfolio swiper-section">
         <div class="edrea_tm_main_title">
-          <h3>Creative <span class="coloring">Portfolio</span></h3>
+          <h3>Portfólio <span class="coloring">Criativo</span></h3>
         </div>
         <div class="portfolio_list gallery_zoom">
           <swiper
@@ -37,15 +37,19 @@
               <div class="list_inner">
                 <div class="image">
                   <img src="img/thumbs/1-1.jpg" alt="" />
-                  <div class="main" data-img-url="img/portfolio/1.jpg"></div>
+                  <div
+                    class="main"
+                    :style="{ backgroundImage: 'url(img/portfolio/consulttymed_final.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#fff', backgroundPosition: 'center' }"
+                  ></div>
                 </div>
                 <div class="details">
-                  <h3>Sweet Fruit</h3>
-                  <span>Vimeo</span>
+                  <h3>Consulttymed</h3>
+                  <span>Ver Projeto</span>
                 </div>
                 <a
-                  class="edrea_tm_full_link popup-vimeo"
-                  href="//player.vimeo.com/video/321091335?autoplay=1"
+                  class="edrea_tm_full_link"
+                  href="https://www.instagram.com/consulttymed/"
+                  target="_blank"
                 ></a>
               </div>
             </swiper-slide>
@@ -53,15 +57,19 @@
               <div class="list_inner">
                 <div class="image">
                   <img src="img/thumbs/1-1.jpg" alt="" />
-                  <div class="main" data-img-url="img/portfolio/2.jpg"></div>
+                  <div
+                    class="main"
+                    :style="{ backgroundImage: 'url(img/portfolio/new_logo_2.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#fff', backgroundPosition: 'center' }"
+                  ></div>
                 </div>
                 <div class="details">
-                  <h3>Good Present</h3>
-                  <span>Youtube</span>
+                  <h3>Blog do Bina</h3>
+                  <span>Ver Projeto</span>
                 </div>
                 <a
-                  class="edrea_tm_full_link popup-youtube"
-                  href="//www.youtube.com/embed/toClS5fCudA?autoplay=1"
+                  class="edrea_tm_full_link"
+                  href="https://www.blogdobina.com"
+                  target="_blank"
                 ></a>
               </div>
             </swiper-slide>
@@ -69,145 +77,59 @@
               <div class="list_inner">
                 <div class="image">
                   <img src="img/thumbs/1-1.jpg" alt="" />
-                  <div class="main" data-img-url="img/portfolio/3.jpg"></div>
+                  <div
+                    class="main"
+                    :style="{ backgroundImage: 'url(img/portfolio/new_logo_1.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#fff', backgroundPosition: 'center' }"
+                  ></div>
                 </div>
                 <div class="details">
-                  <h3>Mockup Cream</h3>
-                  <span>Soundcloud</span>
+                  <h3>Tecla1</h3>
+                  <span>Ver Projeto</span>
                 </div>
                 <a
-                  class="edrea_tm_full_link soundcloude_link mfp-iframe audio"
-                  href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                  class="edrea_tm_full_link"
+                  href="https://www.tecla1.com.br"
+                  target="_blank"
                 ></a>
               </div>
             </swiper-slide>
-            <swiper-slide class="swiper-slide">
+             <swiper-slide class="swiper-slide">
               <div class="list_inner">
                 <div class="image">
                   <img src="img/thumbs/1-1.jpg" alt="" />
-                  <div class="main" data-img-url="img/portfolio/4.jpg"></div>
+                  <div
+                    class="main"
+                    :style="{ backgroundImage: 'url(img/portfolio/new_logo_3.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#fff', backgroundPosition: 'center' }"
+                  ></div>
                 </div>
                 <div class="details">
-                  <h3>Delicious Apple</h3>
-                  <span>Detail</span>
-                </div>
-                <a class="edrea_tm_full_link portfolio_popup" href="#"></a>
-
-                <!-- Portfolio Popup Informations -->
-                <div class="edrea_tm_hidden_content">
-                  <div class="portfolio_popup_details">
-                    <div class="top_image">
-                      <img src="img/thumbs/4-2.jpg" alt="" />
-                      <div
-                        class="main"
-                        data-img-url="img/portfolio/4.jpg"
-                        style="background-image: url('img/portfolio/4.jpg')"
-                      ></div>
-                    </div>
-                    <div class="details">
-                      <h3>Delicious Apple</h3>
-                      <span>Detail</span>
-                    </div>
-                    <div class="text">
-                      <p>
-                        An apple is an edible fruit produced by an apple tree.
-                        Apple trees are cultivated worldwide and are the most
-                        widely grown species in the genus Malus. The tree
-                        originated in Central Asia, where its wild ancestor,
-                        Malus sieversii, is still found today.
-                      </p>
-                      <p>
-                        Apples grown from seed tend to be very different from
-                        those of the parents, and the resultant fruit frequently
-                        lack desired characteristics. Generally then, apple
-                        cultivars are propagated by clonal grafting onto
-                        rootstocks. Apple trees grown without rootstocks tend to
-                        be larger and much slower to fruit after planting.
-                      </p>
-                    </div>
-                    <div class="additional_images">
-                      <ul class="gallery_zoom">
-                        <li>
-                          <div class="list_inner">
-                            <div class="image">
-                              <img src="img/thumbs/4-2.jpg" alt="" />
-                              <div
-                                class="main"
-                                data-img-url="img/portfolio/7.jpg"
-                              ></div>
-                              <a
-                                class="edrea_tm_full_link zoom"
-                                href="img/portfolio/7.jpg"
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="list_inner">
-                            <div class="image">
-                              <img src="img/thumbs/4-2.jpg" alt="" />
-                              <div
-                                class="main"
-                                data-img-url="img/portfolio/8.jpg"
-                              ></div>
-                              <a
-                                class="edrea_tm_full_link zoom"
-                                href="img/portfolio/8.jpg"
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="list_inner">
-                            <div class="image">
-                              <img src="img/thumbs/4-2.jpg" alt="" />
-                              <div
-                                class="main"
-                                data-img-url="img/portfolio/9.jpg"
-                              ></div>
-                              <a
-                                class="edrea_tm_full_link zoom"
-                                href="img/portfolio/9.jpg"
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- /Portfolio Popup Informations -->
-              </div>
-            </swiper-slide>
-            <swiper-slide class="swiper-slide">
-              <div class="list_inner">
-                <div class="image">
-                  <img src="img/thumbs/1-1.jpg" alt="" />
-                  <div class="main" data-img-url="img/portfolio/5.jpg"></div>
-                </div>
-                <div class="details">
-                  <h3>Blue Lemon</h3>
-                  <span>Image</span>
+                  <h3>Arapiraca News</h3>
+                  <span>Ver Projeto</span>
                 </div>
                 <a
-                  class="edrea_tm_full_link zoom"
-                  href="img/portfolio/5.jpg"
+                  class="edrea_tm_full_link"
+                  href="https://www.arapiracanews.com.br"
+                  target="_blank"
                 ></a>
               </div>
             </swiper-slide>
-            <swiper-slide class="swiper-slide">
+             <swiper-slide class="swiper-slide">
               <div class="list_inner">
                 <div class="image">
                   <img src="img/thumbs/1-1.jpg" alt="" />
-                  <div class="main" data-img-url="img/portfolio/6.jpg"></div>
+                  <div
+                    class="main"
+                    :style="{ backgroundImage: 'url(img/portfolio/urbanisme_port.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundColor: '#fff', backgroundPosition: 'center' }"
+                  ></div>
                 </div>
                 <div class="details">
-                  <h3>Sweet Cheery</h3>
-                  <span>Image</span>
+                  <h3>Urbanisme</h3>
+                  <span>Ver Projeto</span>
                 </div>
                 <a
-                  class="edrea_tm_full_link zoom"
-                  href="img/portfolio/6.jpg"
+                  class="edrea_tm_full_link"
+                  href="https://www.instagram.com/construtoraurbanisme/"
+                  target="_blank"
                 ></a>
               </div>
             </swiper-slide>
@@ -253,7 +175,7 @@
 // Import Swiper Vue.js components
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { swiperSliderCustomSlider } from "../utilits";
+import { swiperSliderCustomSlider, dataImage } from "../utilits";
 
 export default {
   name: `PortfolioComponent`,
@@ -265,6 +187,9 @@ export default {
     onSlideChange(swiper) {
       this.activeSlider = swiper.activeIndex + 1;
     },
+  },
+  mounted() {
+    dataImage();
   },
   setup() {
     return {

@@ -1,6 +1,6 @@
 <template>
   <span class="cd-headline rotate-1">
-    <span class="blc">Creative </span>
+    <span class="blc">Criativo </span>
     <span class="cd-words-wrapper">
       <b
         :class="text == i ? 'is-visible' : 'is-hidden'"
@@ -18,7 +18,7 @@ export default {
   name: `AnimationText`,
   data() {
     return {
-      skills: ["Designer", "Developer", "Freelancer"],
+      skills: ["Designer", "Desenvolvedor", "Freelancer"],
       text: 0,
     };
   },
