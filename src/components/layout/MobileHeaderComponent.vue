@@ -3,8 +3,8 @@
     <div class="topbar_inner">
       <div class="logo">
         <a href="#" @click="navFuntions.activeSection('home')"
-          ><img src="img/logo/logo.png" alt=""
-        /></a>
+          ><h3 style="color: #a2a2a2; font-size: 25px; font-weight: 600; font-family: 'Poppins'; margin-bottom: 0;">Micka <span style="color: #fff; font-weight: 700;">Bandeira</span></h3></a
+        >
       </div>
       <div class="trigger">
         <div
